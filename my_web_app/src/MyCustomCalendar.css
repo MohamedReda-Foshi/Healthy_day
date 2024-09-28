@@ -1,0 +1,36 @@
+/* Custom styles for react-calendar */
+
+.react-calendar {
+    border: none; /* Remove default border */
+    background-color: #f0f0f0; /* Add a light background color */
+    width: 500px;
+}
+
+.react-calendar__tile {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.react-calendar__tile:hover {
+    background-color: #ececec; /* Change hover color */
+}
+
+.react-calendar__navigation button {
+    background: #007bff; /* Customize navigation button background */
+    color: #fff;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: red; /* Customize weekend day color */
+}
+
+.react-calendar__tile--active {
+    background: #007bff; /* Customize active date color */
+    color: #fff;
+}
+
+.react-calendar__tile--now {
+    background-color: #ffcc00; /* Change current date background color */
+    color: #000;
+}

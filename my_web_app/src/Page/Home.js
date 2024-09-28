@@ -1,17 +1,19 @@
-import Task from "../components/Task";
-import Calender from "../components/Calender";
+import Features from "../components/Features";
+import MainSection from "../components/MainSection";
 
 export default function Home() {
   return (
     <div>
-    <div className="flex-row justify-around z-30">
-      <div className="w-12">
-        <Task />
-      </div>
-      <div >
-        <Calender />
+      <div>
+        <div>
+          <MainSection />
+        </div>
+        <div className="flex-col md:flex-row md:flex  justify-between px-11 z-30 h-lvh py-1">
+          <div className="  ">
+            <Features />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  )
+  );
 }

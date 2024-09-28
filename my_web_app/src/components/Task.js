@@ -21,21 +21,29 @@ const TodoList = () => {
   };
 
   return (
-    <div className="p-6 w-72 bg-green-50 rounded-lg shadow-md h-full">
+    <div className="p-6 max-w-xl	 bg-green-50 rounded-3xl shadow-md h-full">
       <h2 className="text-2xl font-semibold text-green-700 mb-4">To Do List</h2>
-      <input
-        type="text"
-        value={tasks}
-        onChange={handleInputChange}
-        placeholder="Add a new task"
-        className="w-full p-3 border border-green-300 rounded focus:outline-none focus:ring focus:ring-green-400"
-      />
-      <button
-        onClick={handleAddTask}
-        className="w-full mt-2 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-200"
-      >
-        Add Task
-      </button>
+      
+        <form action="">
+
+        <label>
+          <input
+            type="text"
+            value={tasks}
+            onChange={handleInputChange}
+            placeholder="Add a new task"
+            className="w-full p-3 border border-green-300 rounded text-black focus:outline-none focus:ring focus:ring-green-400"
+          />
+        </label>
+        </form>
+          <button
+            onClick={handleAddTask}
+            className="w-full mt-2 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-200"
+          >
+            Add Task
+          </button>
+        
+      
       <ul className="mt-4">
         {todoItems.map((task, index) => (
           <li
