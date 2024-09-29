@@ -22,7 +22,7 @@ function MainSection() {
               aria-label="Start TechFest Events"
             >
               <Link to='/Sinup'>
-                <Button button="Sing now"/>
+                <Button button="Go to your caleder"/>
               </Link>
             </a>
           </div>

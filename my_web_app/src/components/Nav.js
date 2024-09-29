@@ -18,7 +18,7 @@ function Nav({ toggleDarkMode, darkMode }) {
           <ul className="gap-14 flex-row py-3 ">
             <li>
               <Link
-                to="/"
+                to="/Home"
                 spy={true}
                 smooth={true}
                 className="dark:text-white relative cursor-pointer text-xl w-fit block after:block after:content-after:absolute after:h-[3px]  after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
