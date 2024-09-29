@@ -1,6 +1,7 @@
 import React from 'react';
+import Achievements from "../components/Achievements"
 
-export default function User() {
+export default function User({ height = 'h-32', color = 'bg-gray-300' }) {
   return (
     <div>
       <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css" />
@@ -41,22 +42,23 @@ export default function User() {
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-1"></div>
                 </div>
-                
-                <div className="text-center mt-12">
-                  <h3 className="text-4xl font-semibold leading-normal  text-blueGray-700 mb-2">Jenna Stones</h3>
-                  <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                    <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                    Los Angeles, California
-                  </div>
-                  <div className="mb-2 text-blueGray-600 mt-10">
-                    <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-                    Solution Manager - Creative Tim Officer
-                  </div>
-                  <div className="mb-2 text-blueGray-600">
-                    <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                    University of Computer Science
-                  </div>
+
+              <div className='flex-row items-center  py-40 justify-around'>
+
+              
+                <div className='py'>
+                  <Achievements Titles="bronse" text="wad"/>    
+                  <Achievements Titles Point="wad" text="wadas"/>    
+                  <Achievements Titles Point="awd" text="awdas"/>    
                 </div>
+                <div className={`${height} ${color} w-px`} />
+                <div>
+                  <Achievements Titles Point="awd" text="awd"/>    
+                  <Achievements Titles Point="awd" text=""/>    
+                  <Achievements Titles Point="wad" text="awd"/>    
+                </div>
+                
+              </div>
                 
                 <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                   <div className="flex flex-wrap justify-center">

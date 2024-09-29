@@ -9,10 +9,10 @@ function FeatIdea(props) {
       <div className="">
           <div className="  md:7/12    border-collapse">
             <h1 className="text-2xl font-bold text-green-400 py-4 uppercase">
-              Calender Page
+              {props.title}
             </h1>
-            <p className="mb-1  line-clamp-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+            <p className="mb-1 dark:text-black line-clamp-3">
+              {props.info}
             </p>
             <div>
           

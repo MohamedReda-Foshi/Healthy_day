@@ -1,6 +1,6 @@
 import React from "react";
 import FeatIdea from "./FeatIdea"; // Ensure FeatIdea is correctly imported
-import Image1 from "../asseet/image.jpg"; // This is an image import, not a component
+import Image1 from "../asseet/img1.jpg"; // This is an image import, not a component
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
@@ -15,16 +15,24 @@ function Features() {
       <div className="col-span-4">
         {/* FeatIdea should work if correctly imported */}
         <div className="flex-col">
-        <FeatIdea description="X" Titel="1"/>
-          <Link to="/CalenderPage">
+        <FeatIdea description="X" title="tack your Calender" info="Lorem"/>
+          <Link to="/calender">
           
             <Button button="to now more"/>
           </Link>
 
         </div>
         <div className="flex-col">
-        <FeatIdea description="X" Titel="1"/>
-          <Link to="/Taskpage">
+        <FeatIdea description="X" title="See tack" info="Lorem"/>
+          <Link to="/task">
+          
+            <Button button="to now more" />
+          </Link>
+
+        </div>
+        <div className="flex-col">
+        <FeatIdea description="X" title="tack your attchivement "  info="Lorem"/>
+          <Link to="/user">
           
             <Button button="to now more"/>
           </Link>

@@ -25,8 +25,8 @@ function App() {
           <Nav toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         </div>
 
-        <div className=" py-10 h-lvh">
-          <div className="text-black dark:text-white dark:bg-green-600 h-lvh py-4">
+        <div className=" py-10 ">
+          <div className="text-black dark:text-white dark:bg-gray-600  py-4">
             <Routes>
               <Route path="/" element={<AppDesk />} />
               <Route path="/home" element={<Home />} />
