@@ -40,11 +40,11 @@ export default function User({ height = 'h-32', color = 'bg-gray-300' }) {
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                   </div>
-                  <div className="w-full lg:w-4/12 px-4 lg:order-1"></div>
+                  <div>0 xp</div>
                 </div>
 
               <div className='flex-row items-center  py-40 justify-around'>
-
+                 <div className='font-bold text-green-500'>0 xp</div>
               
                 <div className='py'>
                   <Achievements Titles="bronse" text="wad"/>    

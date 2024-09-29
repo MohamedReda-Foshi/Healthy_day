@@ -1,49 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const TodoList = () => {
-  const [tasks, setTasks] = useState("");
   const [todoItems, setTodoItems] = useState([]);
 
-  const handleInputChange = (e) => {
-    setTasks(e.target.value);
-  };
+  // Simulate fetching data from a database
+  useEffect(() => {
+    // Replace this with your actual database fetching logic
+    const fetchData = async () => {
+      // Simulated database response
+      const tasksFromDatabase = [
+        "Drink whater  10 xp",
+        "Eat healthy 15 xp",
+        "Sleep at 10:pm  15 xp",
+        "Change your underwar 15 xp",
+      ];
+      setTodoItems(tasksFromDatabase);
+    };
 
-  const handleAddTask = () => {
-    if (tasks) {
-      setTodoItems([...todoItems, tasks]);
-      setTasks("");
-    }
-  };
-
-  const handleDeleteTask = (index) => {
-    const newTodoItems = todoItems.filter((_, i) => i !== index);
-    setTodoItems(newTodoItems);
-  };
+    fetchData();
+  }, []);
 
   return (
-    <div className="p-6 max-w-xl	 bg-green-50 rounded-3xl shadow-md h-full">
+    <div className="p-6 max-w-xl bg-green-50 rounded-3xl shadow-md h-full">
       <h2 className="text-2xl font-semibold text-green-700 mb-4">To Do List</h2>
-      
-        <form action="">
 
-        <label>
-          <input
-            type="text"
-            value={tasks}
-            onChange={handleInputChange}
-            placeholder="Add a new task"
-            className="w-full p-3 border border-green-300 rounded text-black focus:outline-none focus:ring focus:ring-green-400"
-          />
-        </label>
-        </form>
-          <button
-            onClick={handleAddTask}
-            className="w-full mt-2 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition duration-200"
-          >
-            Add Task
-          </button>
-        
-      
       <ul className="mt-4">
         {todoItems.map((task, index) => (
           <li
@@ -58,12 +38,6 @@ const TodoList = () => {
               />
               <span className="text-gray-700 font-medium">{task}</span>
             </div>
-            <button
-              onClick={() => handleDeleteTask(index)}
-              className="text-red-600 hover:text-red-800 transition duration-200"
-            >
-              Delete
-            </button>
           </li>
         ))}
       </ul>

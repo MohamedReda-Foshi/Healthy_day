@@ -10,11 +10,11 @@ function MainSection() {
       <div className=" text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
           <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-            <h1 className="text-3xl md:text-5xl p-2 text-white-300 tracking-loose font-bold text-black">Protect Yourself</h1>
-            <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2 text-black">
-              Withy routine
+            <h1 className="text-3xl md:text-5xl p-2 text-white-300 tracking-loose font-bold text-black dark:text-white">Protect Yourself</h1>
+            <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2 text-black dark:text-white">
+              With healthy routine
             </h2>
-            <p className="text-sm md:text-base  mb-4 text-black">
+            <p className="text-sm md:text-base  mb-4 text-black dark:text-white">
             Protect yourself by using condoms, getting tested regularly,// just keep going, one step at a time Your health and safety always come first!
             </p>
             <a

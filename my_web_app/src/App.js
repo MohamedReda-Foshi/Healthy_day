@@ -26,7 +26,7 @@ function App() {
         </div>
 
         <div className=" py-10 ">
-          <div className="text-black dark:text-white dark:bg-gray-600  py-4">
+          <div className="text-black dark:bg-[#333333]  dark:text-white d  py-4">
             <Routes>
               <Route path="/" element={<AppDesk />} />
               <Route path="/home" element={<Home />} />
